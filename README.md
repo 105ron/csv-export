@@ -1,24 +1,11 @@
-# README
+# CSV Export Sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This simple Rails application only has one view with the ability to export the Student model with the Schools name from a Active Record belongs_to association.
 
-Things you may want to cover:
+This was built using:
 
-* Ruby version
+* Ruby version 2.3.0
 
-* System dependencies
+* Rails version 5.0.0.1
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* PostgresSQL 0.18
