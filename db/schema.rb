@@ -18,10 +18,8 @@ ActiveRecord::Schema.define(version: 20161204050724) do
   create_table "schools", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
-    t.integer  "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["student_id"], name: "index_schools_on_student_id", using: :btree
   end
 
   create_table "students", force: :cascade do |t|
@@ -31,7 +29,8 @@ ActiveRecord::Schema.define(version: 20161204050724) do
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "school_id"
+    t.index ["school_id"], name: "index_students_on_school_id", using: :btree
   end
 
-  add_foreign_key "schools", "students"
 end

@@ -3,8 +3,8 @@ class CreateSchools < ActiveRecord::Migration[5.0]
     create_table :schools do |t|
       t.string :name
       t.string :address
-      t.references :student, foreign_key: true
       t.timestamps
     end
+    add_reference :students, :school, index: true
   end
 end
