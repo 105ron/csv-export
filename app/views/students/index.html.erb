@@ -1,1 +1,19 @@
 <h1>Welcome to Students Index</h1>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.full_name%></td>
+        <td><%= student.DOB%></td>
+        <td><%= student.email%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
