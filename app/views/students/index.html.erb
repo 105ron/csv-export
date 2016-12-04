@@ -1,5 +1,9 @@
 <div class="container">
-  <h1>Welcome to Students Index</h1>
+  <ul>
+    <li><%= link_to "Export CSV", students_path(format: :csv) %></li>
+    <li><a href="/">Home</a></li>
+  </ul>
+  <h1>CSV Export Sample Student</h1>
   <table>
     <thead>
       <tr>
