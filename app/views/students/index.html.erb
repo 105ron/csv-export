@@ -1,5 +1,6 @@
 <div class="container">
   <ul>
+    <li><%= link_to 'Export XLSX', students_path(format: :xlsx) %></li>
     <li><%= link_to "Export CSV", students_path(format: :csv) %></li>
     <li><a href="/">Home</a></li>
   </ul>

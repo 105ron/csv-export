@@ -90,7 +90,7 @@ li {
 }
 
 a {
-  margin: 10px 15px 0 0;
+  margin: 10px 5px 0 0;
   display: block;
   padding: 8px;
   border-radius: 4px;
@@ -111,4 +111,8 @@ a {
 
 a:visited {
     color: #e3e3e3;
+}
+
+li:first-child {
+  margin-right: 15px;
 }
