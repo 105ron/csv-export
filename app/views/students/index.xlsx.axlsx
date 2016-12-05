@@ -1,8 +1,11 @@
 wb = xlsx_package.workbook
 wb.add_worksheet(name: "Student") do |sheet|
-  title = wb.styles.add_style(b: true, bg_color: "395870", fg_color: "FFFFFF", alignment: {horizontal: :center})
-  sheet.add_row ["ID", "Name", "Date of Birth", "Email", "School", "School Address"], style: title
+  title = wb.styles.add_style(b: true, bg_color: "395870", fg_color: "FFFFFF",
+                              alignment: {horizontal: :center})
+  sheet.add_row ["ID", "Name", "Date of Birth", "Email",
+                               "School", "School Address"], style: title
   @students.each do |student|
-    sheet.add_row [student.id, student.full_name, student.DOB, student.email, student.school_name, student.school_address]
+    sheet.add_row [student.id, student.full_name, student.DOB, student.email,
+                   student.school_name, student.school_address]
   end
 end
